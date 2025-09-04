@@ -4,9 +4,11 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
      
   output: {
-    path: path.resolve(__dirname, 'dist'),
-    filename: 'bundle.js',
+    path: path.resolve(__dirname, "docs"),
+    filename: "bundle.[contenthash].js",
+    publicPath: "/WebBuild/"
   },
+
   module: {
     rules: [
       {
